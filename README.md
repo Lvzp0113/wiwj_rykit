@@ -8,4 +8,6 @@
 
 im_lib 升级至 5.1.9 -- im_lib库适配Android 12
 
+im_lib 升级至 5.1.9 -- im_lib库适配Android 12; 修复bugly-500006问题
+
 

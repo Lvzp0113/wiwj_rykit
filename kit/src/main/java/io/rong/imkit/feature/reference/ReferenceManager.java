@@ -224,6 +224,9 @@ public class ReferenceManager implements IExtensionModule, IExtensionEventWatche
     private RongIMClient.OnRecallMessageListener mRecallMessageListener = new RongIMClient.OnRecallMessageListener() {
         @Override
         public boolean onMessageRecalled(Message message, RecallNotificationMessage recallNotificationMessage) {
+            if (mFragment == null) {
+                return false;
+            }
             Fragment fragment = mFragment.get();
             if (fragment == null) {
                 return false;
