@@ -248,6 +248,9 @@ public class ReferenceManager implements IExtensionModule, IExtensionEventWatche
                         .setCancelable(false)
                         .show();
                 hideReferenceView();
+                if (messageViewModel == null) {
+                    return false;
+                }
                 RongExtensionViewModel viewModel = messageViewModel.get();
                 if (viewModel != null) {
                     viewModel.collapseExtensionBoard();
